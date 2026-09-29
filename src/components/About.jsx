@@ -5,6 +5,7 @@ import { Fade } from 'react-awesome-reveal';
 import Header from './Header';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
+import RevealOnScroll from './RevealOnScroll';
 import '../css/about.css';
 
 function About(props) {
@@ -23,7 +24,7 @@ function About(props) {
   return (
     <>
       <Header title={header} />
-      <div className="section-content-container">
+      <RevealOnScroll className="section-content-container">
         {data ? (
           <Fade triggerOnce>
             <div className="bento">
@@ -38,7 +39,7 @@ function About(props) {
             </div>
           </Fade>
         ) : <FallbackSpinner />}
-      </div>
+      </RevealOnScroll>
     </>
   );
 }

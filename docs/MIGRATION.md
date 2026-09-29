@@ -4,8 +4,7 @@ v2 is a **visual** overhaul — the markup, styling system, fonts and layout wer
 rebuilt. The good news: **your content carries over unchanged**. Only custom
 *styles* and any edits to the section components need re-applying.
 
-> Prefer the classic look? Stay on v1 — `git clone -b v1 https://github.com/mayankagarwal09/dev-portfolio`
-> or the [v1.0.0 release](https://github.com/mayankagarwal09/dev-portfolio/releases/tag/v1.0.0). No migration needed.
+This portfolio uses the current React/Vite layout and JSON-driven profile content.
 
 ---
 
@@ -26,7 +25,7 @@ rebuilt. The good news: **your content carries over unchanged**. Only custom
 Easiest is to start from a fresh v2 clone and copy your content in:
 
 ```bash
-git clone https://github.com/mayankagarwal09/dev-portfolio dev-portfolio-v2
+Clone or download this project, then run `npm install` and `npm run dev`.
 cd dev-portfolio-v2
 # copy your data + images from your v1 project
 cp -r ../<your-v1>/public/profile ./public/

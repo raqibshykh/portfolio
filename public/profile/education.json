@@ -1,19 +1,19 @@
 {
-    "education":[
+    "education": [
         {
-            "title": "Jun 20XX - Jun 20YY",
-            "cardTitle": "B.Tech, Computer Science",
-            "cardSubtitle":"XYZ University, City",
-            "cardDetailedText": "CGPA - 9.5",
-            "icon" : {
-                "src": "images/education/lorem-ipsum.png"
-            }
+            "title": "May 2025",
+            "cardTitle": "BS Computer Science",
+            "cardSubtitle": "Shah Abdul Latif University (SALU), Khairpur"
         },
         {
-            "title": "Apr 20XX",
-            "cardTitle": "High School",
-            "cardSubtitle":"ABC School, City",
-            "cardDetailedText": "Marks - 95%"
+            "title": "",
+            "cardTitle": "Data Science Certification",
+            "cardSubtitle": "Sukkur IBA University · Government of Sindh IT Bootcamp"
+        },
+        {
+            "title": "",
+            "cardTitle": "Web Development",
+            "cardSubtitle": "NAVTTC"
         }
     ]
 }

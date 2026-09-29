@@ -1,33 +1,61 @@
 {
     "experiences": [
         {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
+            "title": "Front-End Developer",
+            "subtitle": "Optivax Global",
             "workType": "Full-time",
             "workDescription": [
-                "Integrated **2** new product.",
-                "Worked on adding **def** to **bcd**. Improved speed by 50%."
+                "Build responsive front-end interfaces and reusable components.",
+                "Contribute to web development projects with a focus on usability, maintainability, and responsive design."
             ],
-            "dateText": "06/20XX – Present"
+            "dateText": "May 2026 – Present"
         },
         {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
+            "title": "Project-Based Web Developer",
+            "subtitle": "Retekx",
+            "workType": "Project-based",
+            "workDescription": [
+                "Worked on web development projects, implementing responsive interfaces and client requirements using modern web technologies."
+            ],
+            "dateText": ""
+        },
+        {
+            "title": "Web Developer",
+            "subtitle": "BZB Digitals",
+            "workType": "Remote",
+            "workDescription": [
+                "Worked remotely for an Abu Dhabi-based startup on web development and digital solutions."
+            ],
+            "dateText": ""
+        },
+        {
+            "title": "Web Developer",
+            "subtitle": "Craftifem",
+            "workType": "Startup / Project",
+            "workDescription": [
+                "Worked on a multivendor handicrafts marketplace using WordPress and Dokan, focusing on eCommerce and vendor functionality."
+            ],
+            "dateText": ""
+        },
+        {
+            "title": "Web Development Intern",
+            "subtitle": "ME Academy",
             "workType": "Internship",
             "workDescription": [
-                "Worked on abc."
+                "Gained practical experience in web development and worked on real-world website development tasks."
             ],
-            "dateText": "01/20XX – 05/20XX"
+            "dateText": ""
         },
         {
-            "title": "App Developer",
-            "subtitle": "ABC Pvt Ltd",
+            "title": "Freelance Web Developer",
+            "subtitle": "",
             "workType": "Freelance",
             "workDescription": [
-                "Developed the official apps for the startup for both Android and iOS using hybrid framework.",
-                "Done bcd work."
+                "Custom web development and business websites.",
+                "WordPress and eCommerce websites.",
+                "PHP/Laravel and Python/Django applications."
             ],
-            "dateText": "09/20XX – 01/20YY"
+            "dateText": ""
         }
     ]
 }

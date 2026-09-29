@@ -39,6 +39,14 @@ const NavBar = () => {
   const theme = useContext(ThemeContext);
   const [data, setData] = useState(null);
   const [expanded, setExpanded] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 16);
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   useEffect(() => {
     fetch(endpoints.navbar, {
@@ -54,7 +62,7 @@ const NavBar = () => {
       fixed="top"
       expand="md"
       variant={theme.bsPrimaryVariant}
-      className="navbar-custom"
+      className={`navbar-custom ${scrolled ? 'navbar-custom--scrolled' : ''}`}
       expanded={expanded}
     >
       <Container>
@@ -80,10 +88,10 @@ const NavBar = () => {
           <Nav className="me-auto" />
           <Nav>
             {data
-              && data.sections?.map((section, index) => (section?.type === 'link' ? (
+              && data.sections?.filter((section) => section.type !== 'link' || data.resumeUrl).map((section, index) => (section?.type === 'link' ? (
                 <ExternalNavLink
                   key={section.title}
-                  href={section.href}
+                  href={data.resumeUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setExpanded(false)}

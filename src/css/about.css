@@ -24,6 +24,12 @@
   padding: 0;
   display: flex;
   min-height: 300px;
+  transition: border-color var(--dur-slow) var(--ease), box-shadow var(--dur-slow) var(--ease);
+}
+
+.about-image-tile:hover {
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--border));
+  box-shadow: 0 0 0 5px var(--accent-soft), var(--shadow-md);
 }
 
 .about-image-tile img {
@@ -31,4 +37,14 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 50%;
+  max-width: 280px;
+  max-height: 280px;
+  margin: auto;
+  transition: transform var(--dur-slow) var(--ease-out), filter var(--dur-slow) var(--ease);
+}
+
+.about-image-tile:hover img {
+  transform: scale(1.04);
+  filter: saturate(1.08) contrast(1.03);
 }

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import endpoints from '../constants/endpoints';
 import Header from './Header';
 import FallbackSpinner from './FallbackSpinner';
+import RevealOnScroll from './RevealOnScroll';
 import '../css/timeline.css';
 
 function Education(props) {
@@ -23,7 +24,7 @@ function Education(props) {
     <>
       <Header title={header} />
       {data ? (
-        <div className="section-content-container">
+        <RevealOnScroll className="section-content-container">
           <Fade triggerOnce>
             <div className="tl tl--education">
               {data.education?.map((item) => (
@@ -47,7 +48,7 @@ function Education(props) {
               ))}
             </div>
           </Fade>
-        </div>
+        </RevealOnScroll>
       ) : <FallbackSpinner /> }
     </>
   );

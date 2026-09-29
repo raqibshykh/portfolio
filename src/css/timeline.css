@@ -73,13 +73,32 @@
   box-shadow: var(--shadow-sm);
   padding: var(--space-5);
   transition: transform var(--dur) var(--ease),
-    box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease);
+    box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease),
+    background-color var(--dur) var(--ease);
 }
 
 .tl-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
   border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
+  background: color-mix(in srgb, var(--surface) 92%, var(--accent));
+}
+
+.tl-item {
+  animation: timeline-in 0.65s var(--ease-out) both;
+}
+
+.tl-item:nth-child(2) { animation-delay: 80ms; }
+.tl-item:nth-child(3) { animation-delay: 160ms; }
+.tl-item:nth-child(4) { animation-delay: 240ms; }
+
+@keyframes timeline-in {
+  from { opacity: 0; transform: translateX(-12px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tl-item { animation: none; }
 }
 
 .tl-date {

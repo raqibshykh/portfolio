@@ -5,6 +5,7 @@ import { Fade } from 'react-awesome-reveal';
 import Header from './Header';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
+import RevealOnScroll from './RevealOnScroll';
 import '../css/timeline.css';
 
 function Experience(props) {
@@ -24,7 +25,7 @@ function Experience(props) {
     <>
       <Header title={header} />
       {data ? (
-        <div className="section-content-container">
+        <RevealOnScroll className="section-content-container">
           <Fade triggerOnce>
             <div className="tl tl--experience">
               {data.map((item) => (
@@ -51,7 +52,7 @@ function Experience(props) {
               ))}
             </div>
           </Fade>
-        </div>
+        </RevealOnScroll>
       ) : <FallbackSpinner /> }
     </>
   );

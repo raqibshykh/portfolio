@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown';
 
-const ProjectCard = ({ project, featured = false }) => {
+function ProjectCard({ project, featured = false }) {
   const parseBodyText = (text) => <ReactMarkdown>{text}</ReactMarkdown>;
 
   return (
@@ -50,7 +50,7 @@ const ProjectCard = ({ project, featured = false }) => {
       </div>
     </article>
   );
-};
+}
 
 ProjectCard.propTypes = {
   featured: PropTypes.bool,

@@ -5,6 +5,7 @@ import Header from './Header';
 import endpoints from '../constants/endpoints';
 import ProjectCard from './projects/ProjectCard';
 import FallbackSpinner from './FallbackSpinner';
+import RevealOnScroll from './RevealOnScroll';
 import '../css/projects.css';
 
 const Projects = (props) => {
@@ -27,7 +28,7 @@ const Projects = (props) => {
     <>
       <Header title={header} />
       {data ? (
-        <div className="section-content-container">
+        <RevealOnScroll className="section-content-container">
           <Fade triggerOnce>
             <div className="bento">
               {data.projects?.slice(0, numberOfItems).map((project, index) => (
@@ -51,7 +52,7 @@ const Projects = (props) => {
               </button>
             </div>
           )}
-        </div>
+        </RevealOnScroll>
       ) : <FallbackSpinner /> }
     </>
   );

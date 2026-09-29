@@ -52,10 +52,10 @@ function Home() {
             {data?.tagline && <p className="hero-tagline">{data.tagline}</p>}
             <div className="hero-cta">
               <Link className="btn-pill btn-accent" to="/projects">
-                View my work
+                View Projects
               </Link>
-              <Link className="btn-pill btn-ghost" to="/about">
-                About me
+              <Link className="btn-pill btn-ghost" to="/contact">
+                Contact Me
               </Link>
             </div>
           </div>

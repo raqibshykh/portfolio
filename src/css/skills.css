@@ -38,6 +38,11 @@
   align-items: center;
   gap: var(--space-2);
   width: 84px;
+  padding: var(--space-2);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease),
+    background-color var(--dur) var(--ease);
 }
 
 .skill-item img {
@@ -47,8 +52,28 @@
   transition: transform var(--dur) var(--ease);
 }
 
+.skill-fallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
 .skill-item:hover img {
   transform: translateY(-4px) scale(1.08);
+}
+
+.skill-item:hover {
+  transform: translateY(-3px);
+  border-color: var(--border);
+  background: var(--accent-soft);
 }
 
 .skill-item span {

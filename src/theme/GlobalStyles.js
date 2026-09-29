@@ -42,6 +42,8 @@ const GlobalStyles = createGlobalStyle`
     /* Motion */
     --ease: cubic-bezier(0.4, 0, 0.2, 1);
     --dur: 0.25s;
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --dur-slow: 0.55s;
 
     /* Type */
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
@@ -52,6 +54,7 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     scrollbar-color: var(--border) transparent;
+    scroll-behavior: smooth;
   }
 
   body {
@@ -68,6 +71,38 @@ const GlobalStyles = createGlobalStyle`
     background-repeat: no-repeat;
     color: ${({ theme }) => theme.color};
     transition: background-color 0.3s var(--ease), color 0.3s var(--ease);
+  }
+
+  body::before,
+  body::after {
+    content: '';
+    position: fixed;
+    z-index: -1;
+    width: 22rem;
+    height: 22rem;
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(70px);
+    opacity: 0.12;
+    animation: ambient-drift 18s ease-in-out infinite alternate;
+  }
+
+  body::before {
+    top: 18%;
+    right: -12rem;
+    background: ${({ theme }) => theme.accentColor};
+  }
+
+  body::after {
+    bottom: 4%;
+    left: -14rem;
+    background: ${({ theme }) => theme.accentColor2};
+    animation-delay: -7s;
+  }
+
+  @keyframes ambient-drift {
+    from { transform: translate3d(0, -14px, 0) scale(0.94); }
+    to { transform: translate3d(-18px, 18px, 0) scale(1.06); }
   }
 
   a {
@@ -96,6 +131,11 @@ const GlobalStyles = createGlobalStyle`
     outline: 2px solid var(--accent);
     outline-offset: 2px;
     border-radius: 4px;
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: #fff;
   }
 
   @media (prefers-reduced-motion: reduce) {

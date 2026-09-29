@@ -1,63 +1,66 @@
 {
-    "intro": "I love to learn new things and experiment with new technologies.\nThese are some of the major languages, technologies, tools and platforms I have worked with:",
-    "skills": [{
-     
-            "title": "Languages & Databases",
-            "items" : [
-     
-                {
-                    "icon": "images/skills/java.png",
-                    "title": "Java"
-                },
-                {
-                    "icon": "images/skills/php.png",
-                    "title": "PHP"
-                },
-                {
-                    "icon": "images/skills/js.png",
-                    "title": "JavaScript"
-                },
-                {
-                    "icon": "images/skills/python.png",
-                    "title": "Python"
-                },
-                {
-                    "icon": "images/skills/mysql.png",
-                    "title": "MySQL"
-                }
-        ]},
+    "intro": "Web development skills across front-end interfaces, backend applications, WordPress solutions, databases, and creative tools.",
+    "skills": [
         {
-            "title": "Frameworks & Technologies",
-            "items" : [
-                {
-                    "icon": "images/skills/android_new.png",
-                    "title": "Android"
-                },
-                {
-                    "icon": "images/skills/react.png",
-                    "title": "React"
-                },
-                {
-                    "icon": "images/skills/nodejs.png",
-                    "title": "Nodejs"
-                }
+            "title": "Frontend Development",
+            "items": [
+                { "icon": "images/skills/html.png", "title": "HTML5" },
+                { "icon": "images/skills/css.png", "title": "CSS3" },
+                { "icon": "images/skills/js.png", "title": "JavaScript" },
+                { "icon": "images/skills/react.png", "title": "React.js" },
+                { "title": "Next.js" },
+                { "title": "Bootstrap" },
+                { "title": "Tailwind CSS" }
             ]
         },
         {
-            "title" : "Tools & Platforms",
+            "title": "Backend Development",
             "items": [
-                {
-                    "icon": "images/skills/android-studio.png",
-                    "title": "Android Studio"
-                },
-                {
-                    "icon": "images/skills/git.png",
-                    "title": "Git"
-                },
-                {
-                    "icon": "images/skills/docker.png",
-                    "title": "Docker"
-                }
+                { "icon": "images/skills/php.png", "title": "PHP" },
+                { "title": "Laravel" },
+                { "icon": "images/skills/python.png", "title": "Python" },
+                { "icon": "images/skills/django.png", "title": "Django" },
+                { "icon": "images/skills/nodejs.png", "title": "Node.js" }
             ]
-    }
-]}
+        },
+        {
+            "title": "Databases",
+            "items": [
+                { "icon": "images/skills/mysql.png", "title": "MySQL" },
+                { "icon": "images/skills/mongo-db.png", "title": "MongoDB" },
+                { "title": "SQLAlchemy" }
+            ]
+        },
+        {
+            "title": "WordPress & CMS",
+            "items": [
+                { "title": "WordPress" },
+                { "title": "Elementor" },
+                { "title": "Divi" },
+                { "title": "WooCommerce" },
+                { "title": "Dokan" },
+                { "title": "Advanced Custom Fields (ACF)" },
+                { "title": "Ninja Tables" },
+                { "title": "Eventin" }
+            ]
+        },
+        {
+            "title": "Programming / Tools",
+            "items": [
+                { "icon": "images/skills/python.png", "title": "Python" },
+                { "icon": "images/skills/js.png", "title": "JavaScript" },
+                { "icon": "images/skills/git.png", "title": "Git" },
+                { "icon": "images/skills/docker.png", "title": "Docker" },
+                { "title": "GitHub" },
+                { "title": "REST APIs" }
+            ]
+        },
+        {
+            "title": "Design & Creative Tools",
+            "items": [
+                { "title": "Adobe Illustrator" },
+                { "title": "Canva" }
+            ]
+        }
+    ]
+}

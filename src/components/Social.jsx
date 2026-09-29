@@ -35,7 +35,7 @@ function Social() {
           bgColor={theme.socialIconBgColor}
           fgColor={theme.background}
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         />
       )) : null}
     </div>

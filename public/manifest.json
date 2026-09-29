@@ -1,13 +1,7 @@
 {
-  "short_name": "Mayank Agarwal",
-  "name": "Mayank Agarwal - Portfolio",
-  "icons": [
-    {
-      "src": "images/logo.png",
-      "type": "image/png",
-      "sizes": "425x225"
-    }
-  ],
+  "short_name": "Raqib Ahmed",
+  "name": "Raqib Ahmed - Web Developer Portfolio",
+  "icons": [],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

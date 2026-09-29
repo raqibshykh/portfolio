@@ -5,6 +5,7 @@ import { Fade } from 'react-awesome-reveal';
 import Header from './Header';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
+import RevealOnScroll from './RevealOnScroll';
 import '../css/skills.css';
 
 function Skills(props) {
@@ -24,7 +25,7 @@ function Skills(props) {
     <>
       <Header title={header} />
       {data ? (
-        <div className="section-content-container">
+        <RevealOnScroll className="section-content-container">
           <Fade triggerOnce>
             <div className="bento">
               {data.intro && (
@@ -41,7 +42,11 @@ function Skills(props) {
                   <div className="skill-grid">
                     {category.items.map((item) => (
                       <div key={item.title} className="skill-item">
-                        <img src={item.icon} alt={item.title} />
+                        {item.icon ? (
+                          <img src={item.icon} alt="" />
+                        ) : (
+                          <span className="skill-fallback" aria-hidden="true">&lt;/&gt;</span>
+                        )}
                         <span>{item.title}</span>
                       </div>
                     ))}
@@ -50,7 +55,7 @@ function Skills(props) {
               ))}
             </div>
           </Fade>
-        </div>
+        </RevealOnScroll>
       ) : <FallbackSpinner /> }
     </>
   );

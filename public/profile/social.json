@@ -1,20 +1,16 @@
 {
     "social": [
         {
-            "network" : "linkedin",
-            "href": "https://linkedin.com/"
+            "network": "github",
+            "href": "https://github.com/raqib-siddiqi"
         },
         {
-            "network" : "github",
-            "href": "https://github.com/mayankagarwal09"
+            "network": "linkedin",
+            "href": "https://linkedin.com/in/raqibahmed"
         },
         {
-            "network" : "leetcode",
-            "href": "https://leetcode.com/"
-        },
-        {
-            "network" : "email",
-            "href": "mailto:test@test.com"
+            "network": "instagram",
+            "href": "https://www.instagram.com/raqib.ahmed.shaikh"
         }
     ]
 }
