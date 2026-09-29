@@ -33,7 +33,7 @@ function About(props) {
               </div>
               {data?.imageSource && (
                 <div className="tile about-image-tile span-2 rspan-2">
-                  <img src={data.imageSource} alt="profile" />
+                  <img src={data.imageSource} alt="profile" className="about-image" />
                 </div>
               )}
             </div>
