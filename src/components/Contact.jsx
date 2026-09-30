@@ -29,6 +29,8 @@ function Contact({ header }) {
                 <span className="tile-label">Let&apos;s connect</span>
                 <h2>{data.availability}</h2>
                 <p>{data.intro}</p>
+                <span>{data['contact-number']}</span> 
+                <span style={{gap: '1rem'}}>{data.Email}</span>
               </section>
               <section className="tile span-2">
                 <span className="tile-label">Based in</span>
